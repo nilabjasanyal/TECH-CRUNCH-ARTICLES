@@ -43,7 +43,7 @@ def send_mail():
     email = request.form['email']
     # return f'<h1>{first_name}</h1>\n<h1>{contact}\n{message}\n{email}</h1>'
 
-    with smtplib.SMTP("smtp.gmail.com") as connection:
+    with smtplib.SMTP("smtp.gmail.com",587) as connection:
         connection.starttls()
 
         connection.login(user=os.getenv('email'), password=os.getenv('password'))
