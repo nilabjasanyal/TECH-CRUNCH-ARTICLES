@@ -1,6 +1,6 @@
 import os
 import smtplib
-import config
+# import config
 
 import requests
 from  datetime import datetime
